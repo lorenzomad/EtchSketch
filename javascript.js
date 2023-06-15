@@ -28,7 +28,7 @@ const Generatematrix = (rows) => {
             div.classList.add('cell')
 
             //for visualitzation purpose
-            div.style.backgroundColor = 'blue';
+            div.style.backgroundColor = 'white';
             // div.style.borderStyle = "solid";
             // div.style.borderColor = "black";
 
@@ -47,7 +47,7 @@ const Generatematrix = (rows) => {
 
     cells.forEach((element) => {
         element.addEventListener('mouseover', () =>{
-            element.style.backgroundColor = 'yellow';
+            element.style.backgroundColor = 'black';
         })
     })
 }
