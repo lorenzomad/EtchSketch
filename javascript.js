@@ -18,6 +18,8 @@ const Generatematrix = (rows) => {
             div.style.width = dimensions_string;
             div.style.height = dimensions_string;
 
+            div.classList.add('cell')
+
             //for visualitzation purpose
             div.style.backgroundColor = 'blue';
             // div.style.borderStyle = "solid";
@@ -35,5 +37,14 @@ const Generatematrix = (rows) => {
     }
 }
 
-
+//generate the matrix of cells
 Generatematrix(ROWS)
+
+// add the event listeners for hovering to the cells
+const cells  = document.querySelectorAll('.cell')
+
+cells.forEach((element) => {
+    element.addEventListener('click', () =>{
+        element.style.backgroundColor = 'yellow';
+    })
+})
