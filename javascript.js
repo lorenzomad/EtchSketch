@@ -38,7 +38,7 @@ const Generatematrix = (rows) => {
 }
 
 //generate the matrix of cells
-Generatematrix(ROWS)
+Generatematrix(rows)
 
 // add the event listeners for hovering to the cells
 const cells  = document.querySelectorAll('.cell')
