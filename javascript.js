@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-const ROWS = 50;
+let rows = 50;
 
 const Generatematrix = (rows) => {
 
@@ -47,4 +47,20 @@ cells.forEach((element) => {
     element.addEventListener('mouseover', () =>{
         element.style.backgroundColor = 'yellow';
     })
+})
+
+const restart_button = document.querySelector('button')
+
+restart_button.addEventListener('click', () => {
+    while (true) {
+        rows = prompt("what is the number of rows you want (0 - 100)?");
+        if (isNaN(parseInt(rows)) || rows < 0 || rows > 100) {
+            alert('Please choose a valid value between 0 and 100');
+            
+        }    else {
+            break;
+        }
+    }
+    container.textContent = '';
+    Generatematrix(rows)
 })
