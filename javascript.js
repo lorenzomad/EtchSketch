@@ -1,9 +1,6 @@
 const container = document.querySelector('.container');
 
-
 const ROWS = 64;
-
-container.appendChild(div);
 
 const Generatematrix = (rows) => {
 
@@ -16,10 +13,16 @@ const Generatematrix = (rows) => {
         rowdiv.style.display = 'flex';        
         
         for (let y = 0; y < rows; y++){
+            
             const div = document.createElement('div');
             div.style.width = dimensions_string;
             div.style.height = dimensions_string;
+
+            //for visualitzation purpose
             div.style.backgroundColor = 'blue';
+            div.style.borderStyle = "solid";
+            div.style.borderColor = "black";
+
             div.style.flex = '1';
 
             rowdiv.appendChild(div)
