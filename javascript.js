@@ -35,19 +35,21 @@ const Generatematrix = (rows) => {
         container.appendChild(rowdiv)
         
     }
+
+    const cells  = document.querySelectorAll('.cell')
+
+    cells.forEach((element) => {
+        element.addEventListener('mouseover', () =>{
+            element.style.backgroundColor = 'yellow';
+        })
+    })
 }
 
 //generate the matrix of cells
 Generatematrix(rows)
 
 // add the event listeners for hovering to the cells
-const cells  = document.querySelectorAll('.cell')
 
-cells.forEach((element) => {
-    element.addEventListener('mouseover', () =>{
-        element.style.backgroundColor = 'yellow';
-    })
-})
 
 const restart_button = document.querySelector('button')
 
