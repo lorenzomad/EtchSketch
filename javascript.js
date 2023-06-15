@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-const ROWS = 64;
+const ROWS = 50;
 
 const Generatematrix = (rows) => {
 
