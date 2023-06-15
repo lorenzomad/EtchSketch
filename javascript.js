@@ -1,10 +1,17 @@
+const CONTAINER_DIMENSIONS = '960px'
+
 const container = document.querySelector('.container');
+
+
+
+container.style.width = CONTAINER_DIMENSIONS
+container.style.height = CONTAINER_DIMENSIONS
 
 let rows = 50;
 
 const Generatematrix = (rows) => {
 
-    const dimensions = 500/rows
+    const dimensions = CONTAINER_DIMENSIONS/rows
     const dimensions_string = String(dimensions) + 'px'
     for (let x = 0; x < rows; x++) {
 
