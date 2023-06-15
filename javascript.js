@@ -1,19 +1,36 @@
-console.log('you can read me ')
-alert('can you read me ')
-const container = document.querySelector('.container')
-
-const div = document.createElement('div')
-div.style.width = '200px'
-div.style.height = '200px'
-div.style.backgroundColor = 'blue'
-
-const ROWS = 64
-
-container.appendChild(div)
+const container = document.querySelector('.container');
 
 
+const ROWS = 64;
 
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+container.appendChild(div);
+
+const Generatematrix = (rows) => {
+
+    const dimensions = 500/rows
+    const dimensions_string = String(dimensions) + 'px'
+    for (let x = 0; x < rows; x++) {
+
+        const rowdiv = document.createElement('div');
+        rowdiv.style.flex = '1';
+        rowdiv.style.display = 'flex';        
+        
+        for (let y = 0; y < rows; y++){
+            const div = document.createElement('div');
+            div.style.width = dimensions_string;
+            div.style.height = dimensions_string;
+            div.style.backgroundColor = 'blue';
+            div.style.flex = '1';
+
+            rowdiv.appendChild(div)
+
+
+        }
+
+        container.appendChild(rowdiv)
+        
+    }
 }
+
+
+Generatematrix(ROWS)
