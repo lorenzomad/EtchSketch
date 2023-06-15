@@ -20,8 +20,8 @@ const Generatematrix = (rows) => {
 
             //for visualitzation purpose
             div.style.backgroundColor = 'blue';
-            div.style.borderStyle = "solid";
-            div.style.borderColor = "black";
+            // div.style.borderStyle = "solid";
+            // div.style.borderColor = "black";
 
             div.style.flex = '1';
 
