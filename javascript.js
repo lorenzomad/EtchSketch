@@ -1,4 +1,4 @@
-const CONTAINER_DIMENSIONS = '960px'
+const CONTAINER_DIMENSIONS = '600px'
 
 const container = document.querySelector('.container');
 
